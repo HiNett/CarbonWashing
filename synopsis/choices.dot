@@ -1,0 +1,46 @@
+// To preview, download this extension:
+// https://marketplace.visualstudio.com/items?itemName=tintinweb.graphviz-interactive-preview
+
+digraph carbonwashing {
+    start
+    Q1 [label="Why should I trust you? You kidnapped me!"]
+    Q2 [label="Why did you fall in love with me?"]
+    Q3 [label="What do you prefer about me?"]
+    Q4 [label="How would you flirt with the dishwasher?~"]
+    Q5 [label="Which protection do you want to use for the washing?~"]
+    Q6 [label="Which washing cycle do you want to start?~"]
+    Q7 [label="Do you want to do it again?"]
+    Q8 [label="What do you want to purchase for your wedding?"]
+    Q9 [label="What do you want to say for your law agreement"]
+    Q10 [label="What do you want to do during the wedding?"]
+    break
+
+    start -> Q1 [label = "Synopsis' end"]
+    Q1 -> Q2 [label="I fell in love with you at the first sight"]
+    Q1 -> Q3 [label="I didn't kidnap you, I saved your life"]
+    Q1 -> break [label="Yes I did, so what"]
+    Q2 -> Q3 [label="I just needed something to wash my dishes"]
+    Q2 -> Q4 [label="I find you very magnificent"]
+    Q2 -> break [label="I was bored"]
+    Q3 -> Q4 [label="Your options"]
+    Q3 -> Q4 [label="Your shape"]
+    Q3 -> break [label="Your cave"]
+    Q3 -> break [label="your capacity (6.9 L)"]
+    Q4 -> Q5 [label="How you doin'?"]
+    Q4 -> Q5 [label="Can I get a pic of you? I want to show Santa what I want for Christmas."]
+    Q4 -> break [label="Take out your hosepipe"]
+    Q5 -> Q6 [label="All options"]
+    Q6 -> Q7 [label="All options"]
+    Q7 -> Q8 [label="No"]
+    Q7 -> Q6 [label="Yes"]
+    Q8 -> Q9 [label="Ring"]
+    Q8 -> Q9 [label="Dress"]
+    Q8 -> break [label="Painting"]
+    Q9 -> Q10 [label="Agreement"]
+    Q9 -> break [label="Dump"]
+    Q9 -> break [label="Prison"]
+    Q10 -> best_ending [label="Honey moon"]
+    Q10 -> good_ending [label="Kiss the bride"]
+    Q10 -> sad_ending [label="Run away and bring the dishwasher to the dump"]
+
+}
