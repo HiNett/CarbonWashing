@@ -111,7 +111,7 @@ He had one idea for his future: Marry the dishwasher.
 
 ## Scripts
 
-Narration 1:
+Narration Begin 1:
 Your objective for this chapter is to make her fall in love with you. Be careful, you could lose the game at anytime.
 
 Prompt 1:
@@ -140,25 +140,38 @@ Prompt 2.3:
 Go f*** yourself!!!!
 
 Prompt 3:
-Okay then.. Actually, I was in a big trouble where I was, the fact that you saved me was meant to be. Humm, so.. May i ask you.. "Q3".
+Okay then.. Actually, I was in a big trouble where I was, the fact that you saved me was meant to be. Humm, so.. May I ask you.. "Q3".
 
 Prompt 3.1:
+I guess it could have been worth. *shrug* Thank you!
 
 Prompt 3.2:
+Oh... Well, I wasn't expecting this. It pleases me more than I thought it would... *shy/tsundere*
 
 Prompt 3.3:
+You jerk! I was sure I couldn't trust you! Why does it always end like this... *Auto-destruction*
 
 Prompt 3.4:
+I mean... That IS true. I have a great capacity, but you would never fill it! I hate you!
+
+Narration Ending 1:
+
+Narration Begin 2:
 
 Prompt 4:
+Oh... Really?- I mean.. I was not expecting that. Not gonna lie, I'm.. not indifferent. Could I ask you... "Q4"
 
 Prompt 4.1:
+... Okay why not, I'll let it slides this time but, don't EVER do this AGAIN!
 
 Prompt 4.2:
+*slap*
 
 Prompt 4.3:
+*laugh* Okay okay, you got me there, idiot.
 
 Prompt 5:
+Hmm.. this situation becomes interesting...~ You know.. even if I'm a dishwasher, we need to.. protect ourselves. "Q5"
 
 Prompt 5.1:
 
@@ -181,6 +194,10 @@ Prompt 7.1:
 Prompt 7.2:
 
 Prompt 7.3:
+
+Narration Ending 2:
+
+Narration Begin 3:
 
 Prompt 8:
 
@@ -205,3 +222,9 @@ Prompt 10.1:
 Prompt 10.2:
 
 Prompt 10.3:
+
+Narration good_ending:
+
+Narration sad_ending:
+
+Narration best_ending:
