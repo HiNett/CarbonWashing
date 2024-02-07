@@ -12,7 +12,7 @@ digraph carbonwashing {
     Q7 [label="Do you want to do it again?"]
     Q8 [label="What do you want to purchase for your wedding?"]
     Q9 [label="What do you want to say for your law agreement"]
-    Q10 [label="What do you want to do after the wedding?"]
+    Q10 [label="What do you want to do during the wedding?"]
     break
 
     start -> Q1 [label = "Synopsis' end"]
