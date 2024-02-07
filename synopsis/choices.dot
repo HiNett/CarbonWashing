@@ -1,0 +1,9 @@
+// To preview, download this extension:
+// https://marketplace.visualstudio.com/items?itemName=tintinweb.graphviz-interactive-preview
+
+digraph carbonwashing {
+    start
+    choice [label=""]
+
+    start -> choice [label=""]
+}
