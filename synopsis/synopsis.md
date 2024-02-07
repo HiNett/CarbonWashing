@@ -38,11 +38,34 @@ He had one idea for his future: Marry the dishwasher.
 	- BREAKS!
 - your capacity (6.9 L)
 	- SO-SO
+
 ##### Have  a child
 
 ###### Flirt
-
+- How you doin'?
+    - 
+- Take out your hosepipe
+    -
+- Can I get a pic of you? I want to show Santa what I want for Christmas.
+    -
 ###### Protection
-
+- condom
+    - next
+- morning-after pill (Finish quantum?)
+    - next
+- nothing
+    - next
 ###### The act
-##### Get married -->
+- In front
+    - Next question
+- Bareback
+    - Next question
+- On it
+    - Next question
+###### Do you want to do it again?
+- Yes
+    - Get back to the previous question
+- No
+    - Next chapter
+
+##### Get married  -->
