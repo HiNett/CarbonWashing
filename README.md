@@ -14,3 +14,6 @@ CarbonWashing is a CYOA (Choose Your Own Adventure) game. This fantasy-style gam
 | <img src="https://ca.slack-edge.com/T019N8PRR7W-U05SJQXHTSB-332f808d94ae-64"> | GUILLOUCHE Enzo | https://github.com/EnzoGuillouche |
 | <img src="https://ca.slack-edge.com/T019N8PRR7W-U05SZ8DQ0GK-7e592dc1d1fe-64"> | PREVOST Antoine | https://github.com/TechXplorerFR |
 | <img src="https://ca.slack-edge.com/T019N8PRR7W-U05SZ8DT9JP-0ce92cc7bd56-64"> | MARLIER Thibaud | https://github.com/Biohazardyee |
+| <img src="https://ca.slack-edge.com/T019N8PRR7W-U05SZB93L1Y-076dfb50f04a-64"> | BAVAROIS Séréna | https://github.com/NanaChocolat |
+
+## How to play ?
