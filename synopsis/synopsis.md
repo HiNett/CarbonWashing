@@ -11,61 +11,100 @@ He had one idea for his future: Marry the dishwasher.
 
 # Script
 
-<!-- #### Project!!
+#### Project
 
 ##### Make her fall in love
 
-###### Why should I trust you? You kidnapped me!
+###### Why should I trust you? You kidnapped me
+
 - I didn't kidnap you, I saved your life
-	- Skip next question
+  - Skip next question
 - I fell in love with you at the first sight
-	- Goes to the next question
+  - Goes to the next question
 - Yes I did, so what
-	- BREAKS!
+  - BREAKS!
+
 ###### Why did you fall in love with me?
+
 - I find you very magnificent
-	- Next chapter
+  - Next chapter
 - I just needed something to wash my dishes
-	- Next question
+  - Next question
 - I was bored
-	- BREAKS!
+  - BREAKS!
+
 ###### What do you prefer about me?
+
 - Your options
-	- Next chapter
+  - Next chapter
 - Your shape
-	- Next chapter
+  - Next chapter
 - (Your cave)
-	- BREAKS!
+  - BREAKS!
 - your capacity (6.9 L)
-	- SO-SO
+  - SO-SO
 
 ##### Have  a child
 
 ###### Flirt
-- How you doin'?
-    - 
-- Take out your hosepipe
-    -
-- Can I get a pic of you? I want to show Santa what I want for Christmas.
-    -
-###### Protection
-- condom
-    - next
-- morning-after pill (Finish quantum?)
-    - next
-- nothing
-    - next
-###### The act
-- In front
-    - Next question
-- Bareback
-    - Next question
-- On it
-    - Next question
-###### Do you want to do it again?
-- Yes
-    - Get back to the previous question
-- No
-    - Next chapter
 
-##### Get married  -->
+- How you doin'?
+  - Not interesting but still next
+- Take out your hosepipe
+  - BREAKS! (SLAP)
+- Can I get a pic of you? I want to show Santa what I want for Christmas.
+  - Laugh and next
+
+###### Protection
+
+- condom
+  - next
+- morning-after pill (Finish quantum?)
+  - next
+- nothing
+  - next
+
+###### The act
+
+- In front
+  - Next question
+- Bareback
+  - Next question
+- On it
+  - Next question
+
+###### Do you want to do it again?
+
+- Yes
+  - Get back to the previous question
+- No
+  - Next chapter
+
+##### Get married
+
+###### Purchasing
+
+- Ring
+  - PASS
+- Dress
+  - PASS
+- Painting
+  - BREAK!
+
+###### Law agreement (charisma roll)
+
+- Agreement
+  - PASS
+- Dump
+  - BAD END
+- Prison
+  - BAD ENDING
+
+###### Ceremony
+
+- Kiss the bride
+  - Good ending
+- Run away
+  - Sad ending
+- Honey moon
+  - Best ending
