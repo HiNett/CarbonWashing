@@ -1,0 +1,28 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    # Adapted from https://github.com/ProjectAliceDev/renpy-build-action
+    runs-on: ubuntu-22.04
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Download and extract Renpy
+        run: |
+          wget https://www.renpy.org/dl/8.2.0/renpy-8.2.0-sdk.tar.bz2
+          tar -xf renpy-8.2.0-sdk.tar.bz2
+
+      - name: Build the game
+        run: |
+          cd renpy-8.2.0-sdk
+          ./renpy.sh launcher distribute $GITHUB_WORKSPACE --package pc --package mac --package linux
+
+      - name: Debug
+        run: ls
