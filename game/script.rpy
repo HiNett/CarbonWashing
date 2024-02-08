@@ -127,9 +127,71 @@ label narration_ending_1:
     jump Q4
 
 label Q4:
+    d "Since we are in the same place now, we need to agree on some things. So, first of all..."
+    d "Where do you want to go to buy washing detergent?"
+
+    menu:
+        "I think we just need to go to the little shop near the subway station. It's not too far.":
+            d "... Okay why not, I'll let you go there then."
+            jump Q5
+        "Well, actually you're already perfect. We don't need detergent.":
+            d "*laugh* Okay okay, you got me there, idiot. We need to agree on that though."
+            jump Q5
+        "Maybe if I make it on my own...":
+            d "*slap* Do not finish your sentence, you pipsqueak."
+            jump end
+
+label Q5:
+    d "So.. What is the type of detergent you want to use?"
+
+    menu:
+        "detergent tablet.":
+            d "I think liquid detergent could be nice. It's cheap and comes in handy."
+            jump Q6
+        "Finish quantum gel.":
+            d "In my opinion, the powder detergent is THE BEST. I LOVE that you thought about that."
+            jump Q6
+        "Only flush the dishwasher":
+            d "I don't have any preferences as well. You can just go to the shop and bring whatever you want."
+            jump Q6
+
+label Q6:
+    d "Okayy, you just came back with the detergent. Nice, thank you!"
+    d "Well... Which program do you want to launch?"
+
+    menu:
+        "Be soft, launch at 30°C":
+            c "Let's go with a long program. You'll need some time to wash all those dirty plates, I've been stacking them for days now..."
+            d ""
+            jump Q7
+        "Launch at 60°C":
+            c "Let's go with a small program, it is going to be less exhaustive for you. You just restarted to work, we're not going too fast for now."
+            d ""
+            jump Q7
+
+label Q7:
+    d "I'm done with the current program, may I go for another one?"
+
+    menu:
+        "Yes":
+            d "As you wish. Here we go again. *blush*"
+            jump Q6
+        "No":
+            d "Oke, I'll stop here. I'll do some more later.
+Well hum... I need to confess that I like the time spent with you. I'd... like to go further."
+            jump narration_ending_2
+
+label narration_ending_2:
+    "You completed the 2nd chapter! Their now in love with you. Congratulations!"
+    "Your objective for this 3rd chapter is to marry the dishwasher."
+    "You'll have to be straightforward with them, but be careful with the other people, you may encounter."
+
+    jump Q8
+
+label Q7:
     "*TODO: end*"
     return # Main menu
-
+    
 label end:
     "*TODO: end*"
     return # Main menu
