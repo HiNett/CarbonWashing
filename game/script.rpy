@@ -119,14 +119,10 @@ label Q3:
             jump end
 
 label narration_ending_1:
-    nvl_narrator "You completed the 1st chapter! You just obtained the dishwasher's trust. Congratulations!"
-
-    jump narration_begin_2
-
-label narration_begin_2:
-    nvl_narrator "Your objective for this 2nd chapter is to make the dishwasher fall in love with you."
-    nvl_narrator "Nevertheless, you'll have to be more careful in the decisions you make."
-    nvl_narrator "It won't be an easy task, but it already seems like they like you, keep going!"
+    "You completed the 1st chapter! You just obtained the dishwasher's trust. Congratulations!"
+    "Your objective for this 2nd chapter is to make the dishwasher fall in love with you."
+    "Nevertheless, you'll have to be more careful in the decisions you make."
+    "It won't be an easy task, but it already seems like they like you, keep going!"
 
     jump Q4
 
