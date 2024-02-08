@@ -15,14 +15,18 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Download and extract Renpy
+        working-directory: ..
         run: |
-          wget https://www.renpy.org/dl/8.2.0/renpy-8.2.0-sdk.tar.bz2
+          wget https://www.renpy.org/dl/8.2.0/renpy-8.2.0-sdk.tar.bz2 -q
           tar -xf renpy-8.2.0-sdk.tar.bz2
+          rm renpy-8.2.0-sdk.tar.bz2
 
       - name: Build the game
+        working-directory: ../renpy-8.2.0-sdk
         run: |
-          cd renpy-8.2.0-sdk
           ./renpy.sh launcher distribute $GITHUB_WORKSPACE --package pc --package mac --package linux
 
-      - name: Debug
-        run: ls
+      # - name: Release packages
+      #   workworking-directory: ../CarbonWashing-*-dists
+      #   run: TODO
+      #   # The directory contains all the zips ready for release
