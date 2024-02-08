@@ -85,11 +85,53 @@ label Q1:
             jump end
 
 label Q2:
-    "*TODO: Q2*"
-    return # Main menu
+    d "Could I, at least, ask why did you fall in love with me?"
+    d "I mean... I'm only an ordinary dishwasher which was abandonned in a poor DARTY cemetery... So..."
+
+    menu:
+        "I find you very magnificent":
+            d "Awwww~, thank you so much mister! I'm really flattered by what you just said!"
+            jump narration_ending_1
+        "I just needed something to wash my dishes":
+            d "Seriously?! I guess you are honest at least..."
+            jump Q3
+        "I was bored":
+            d "Go f*** yourself!!!!"
+            jump end
 
 label Q3:
-    "*TODO: Q3*"
+    d "Okay then.. Actually, I was in a big trouble where I was, the fact that you saved me was meant to be."
+    d "Humm, so.. May I ask you.."
+    d "What do you prefer about me?"
+
+    menu:
+        "Your options":
+            d "I guess it could have been worse. *shrug* Thank you!"
+            jump narration_ending_1
+        "Your shape":
+            d "Oh... Well, I wasn't expecting this. It pleases me more than I thought it would... *shy/tsundere*"
+            jump narration_ending_1
+        "Your cave":
+            d "You jerk! I was sure I couldn't trust you! Why does it always end like this... *Auto-destruction*"
+            jump end
+        "your capacity (6.9 L)":
+            d "I mean... That IS true. I have a great capacity, but you would never fill it! I hate you!"
+            jump end
+
+label narration_ending_1:
+    nvl_narrator "You completed the 1st chapter! You just obtained the dishwasher's trust. Congratulations!"
+
+    jump narration_begin_2
+
+label narration_begin_2:
+    nvl_narrator "Your objective for this 2nd chapter is to make the dishwasher fall in love with you."
+    nvl_narrator "Nevertheless, you'll have to be more careful in the decisions you make."
+    nvl_narrator "It won't be an easy task, but it already seems like they like you, keep going!"
+
+    jump Q4
+
+label Q4:
+    "*TODO: end*"
     return # Main menu
 
 label end:
