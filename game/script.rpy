@@ -188,7 +188,7 @@ label narration_ending_2:
 
     jump Q8
 
-label Q7:
+label Q8:
     "*TODO: end*"
     return # Main menu
     
