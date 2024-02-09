@@ -8,7 +8,7 @@ digraph carbonwashing {
     Q3 [label="What do you prefer about me?"]
     Q4 [label="Where do you want to go to buy washing detergent?"]
     Q5 [label="What is the type of detergent you want to use?"]
-    Q6 [label="Which program do you want to launch?"]
+    Q6 [label="Which program would you like to launch?"]
     Q7 [label="Do you want to launch a program again?"]
     Q8 [label="What do you want to purchase for your wedding?"]
     Q9 [label="What do you want to say for your law agreement"]
@@ -16,7 +16,7 @@ digraph carbonwashing {
     break
 
     start -> Q1 [label = "Synopsis' end"]
-    Q1 -> Q2 [label="I fell in love with you at the first sight"]
+    Q1 -> Q2 [label="I fell in love with you at first sight"]
     Q1 -> Q3 [label="I didn't kidnap you, I saved your life"]
     Q1 -> break [label="Yes I did, so what"]
     Q2 -> Q3 [label="I just needed something to wash my dishes"]
@@ -36,11 +36,11 @@ digraph carbonwashing {
     Q8 -> Q9 [label="Ring"]
     Q8 -> Q9 [label="Dress"]
     Q8 -> break [label="Painting"]
-    Q9 -> Q10 [label="Agreement"]
-    Q9 -> break [label="Dump"]
-    Q9 -> break [label="Prison"]
-    Q10 -> best_ending [label="Honey moon"]
-    Q10 -> good_ending [label="Kiss the bride"]
-    Q10 -> sad_ending [label="Run away and bring the dishwasher to the dump"]
+    Q9 -> Q10 [label="Be honest"]
+    Q9 -> break [label="Use humor"]
+    Q9 -> break [label="Say the first thing that goes to your mind"]
+    Q10 -> best_ending [label="Would you mind if... we go to a Honeymoon?- I'd be grateful to do it with you by my side."]
+    Q10 -> good_ending [label="Well, I wanna do something that I already want to do... I want to kiss you."]
+    Q10 -> sad_ending [label="Well hum, I think it went a bit far... You were faithful, but I'm not. Farewell, Dishwasher."]
 
 }
