@@ -6,6 +6,8 @@
 define c = Character(_("Carbon"), color = "#666464")
 define d = Character(_("Dishwasher"), color = "#cc9dcf")
 
+image darty = "img/bg/darty.png"
+
 
 
 
