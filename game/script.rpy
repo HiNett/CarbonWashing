@@ -243,11 +243,11 @@ label narration_good_ending:
     nvl_narrator ""
     jump end
 
-label narration_good_ending:
+label narration_best_ending:
     nvl_narrator ""
     jump end
 
-label narration_good_ending:
+label narration_sad_ending:
     nvl_narrator ""
     jump end
 
