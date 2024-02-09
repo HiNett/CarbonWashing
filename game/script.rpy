@@ -56,6 +56,7 @@ label start:
     
 
 label synopsis:
+    scene darty
     nvl_narrator "A dishwasher has been abandoned by its owners in the terrible dishwasher's cemetery named DARTY to be recycled."
     nvl_narrator "However, the logistic services of DARTY forgot about it and the dishwasher is becoming really sad."
     nvl_narrator "One day, an intern was verifying the stocks as he had nothing to do and tripped over the dishwasher."
@@ -147,13 +148,11 @@ label Q5:
     menu:
         "detergent tablet.":
             d "I think liquid detergent could be nice. It's cheap and comes in handy."
-            jump Q6
         "Finish quantum gel.":
             d "In my opinion, the powder detergent is THE BEST. I LOVE that you thought about that."
-            jump Q6
         "Only flush the dishwasher":
             d "I don't have any preferences as well. You can just go to the shop and bring whatever you want."
-            jump Q6
+    jump Q6
 
 label Q6:
     d "Okayy, you just came back with the detergent. Nice, thank you!"
@@ -162,12 +161,11 @@ label Q6:
     menu:
         "Be soft, launch at 30°C":
             c "Let's go with a long program. You'll need some time to wash all those dirty plates, I've been stacking them for days now..."
-            d ""
-            jump Q7
+            d "Do not worry, I'm used to big amounts of dishes."
         "Launch at 60°C":
             c "Let's go with a small program, it is going to be less exhaustive for you. You just restarted to work, we're not going too fast for now."
-            d ""
-            jump Q7
+            d "Aww you're cute. You don't need to be so kind with me."
+    jump Q7
 
 label Q7:
     d "I'm done with the current program, may I go for another one?"
@@ -189,9 +187,69 @@ label narration_ending_2:
     jump Q8
 
 label Q8:
-    "*TODO: end*"
-    return # Main menu
-    
+    "Well, since we're planning on getting married, we need some more stuff to do it."
+    "What do you want to purchase for your wedding?"
+
+    menu:
+        "Ring.":
+            d "OH my God, do you want to waste your money like that? Just for me?"
+            "You both go to the nearest jewelry to find Clem69 an engagement ring. You arrive at the jewelry store and choose the prettiest ring in the entire."
+            jump Q9
+        "Dress.":
+            d "Do you think I'll fit in the dress..? Hmm.. I'll trust you then."
+            "You both go to the nearest wedding shop to find an appropriate dress for Clem69. It was hard... but you successfully found a dress."
+            jump Q9
+        "Painting":
+            d "P-Painting-? Wh-Why?" 
+            "It was quite disappointing for Clem69. She decided to... put some distance with Carbon."
+            jump end
+
+label Q9:
+    "Hum... We got a difficult situation you know, you're a man and I'm.. a dishwasher. So we need to go to a lawyer."
+
+    menu:
+        "Be honest":
+            c "I directly fell in love with them. I can't take it anymore, I need to marry her."
+            d "Awww that's so sweet of you, honey."
+            "The lawyer understood that love is stronger, and no matter what, you'll be together. He told you that the wedding will take place."
+            jump Q10
+        "Use humor":
+            c "You know, this is not the kind of women we're used to meet. Although, I'd be glad to marry this dishwasher."
+            "The appointment went quite bad. The lawyer looked at you awfuly, and took a call. Then, a S.W.A.T. team came in and grabbed the dishwasher. They threw them in the dump."
+            jump end
+        "Say the first thing that goes to your mind":
+            c "I love dishwashers, even more when they can't go away from me..."
+            "The appointment went quite bad. The lawyer looked at you grimly and took a call. Then, a S.W.A.T. team came in and grabbed Carbon. He went in court and he got a life sentence."
+            jump end
+
+label Q10:
+    ""
+
+    menu:
+        "":
+            c "Well, I wanna do something that I already want to do... I want to kiss you."
+            
+            jump narration_good_ending
+        "":
+            c "Well hum, I think it went a bit far... You were faithful, but I'm not. Farewell, Dishwasher."
+
+            jump narration_sad_ending
+        "":
+            c "Would you mind if... we go to a Honeymoon?- I'd be grateful to do it with you by my side."
+            
+            jump narration_best_ending
+
+label narration_good_ending:
+    nvl_narrator ""
+    jump end
+
+label narration_good_ending:
+    nvl_narrator ""
+    jump end
+
+label narration_good_ending:
+    nvl_narrator ""
+    jump end
+
 label end:
-    "*TODO: end*"
     return # Main menu
