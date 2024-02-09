@@ -175,8 +175,7 @@ label Q7:
             d "As you wish. Here we go again. *blush*"
             jump Q6
         "No":
-            d "Oke, I'll stop here. I'll do some more later.
-Well hum... I need to confess that I like the time spent with you. I'd... like to go further."
+            d "Oke, I'll stop here. I'll do some more later. Well hum... I need to confess that I like the time spent with you. I'd... like to go further."
             jump narration_ending_2
 
 label narration_ending_2:
@@ -187,8 +186,8 @@ label narration_ending_2:
     jump Q8
 
 label Q8:
-    "Well, since we're planning on getting married, we need some more stuff to do it."
-    "What do you want to purchase for your wedding?"
+    d "Well, since we're planning on getting married, we need some more stuff to do it."
+    d "What do you want to purchase for your wedding?"
 
     menu:
         "Ring.":
@@ -205,7 +204,7 @@ label Q8:
             jump end
 
 label Q9:
-    "Hum... We got a difficult situation you know, you're a man and I'm.. a dishwasher. So we need to go to a lawyer."
+    d "Hum... We got a difficult situation you know, you're a man and I'm.. a dishwasher. So we need to go to a lawyer."
 
     menu:
         "Be honest":
@@ -223,20 +222,21 @@ label Q9:
             jump end
 
 label Q10:
-    ""
+    d "Okay, so we got some stuff. Now, we just need to plan what we're going to do. Let's get married!"
+    "What do you want to do during the wedding?"
 
     menu:
-        "":
+        "Kiss the bride.":
             c "Well, I wanna do something that I already want to do... I want to kiss you."
-            
+            d "Let's kiss. *smouch* Thank you Carbon for everything, you're the love of my life. *blush*"
             jump narration_good_ending
-        "":
+        "Get scared.":
             c "Well hum, I think it went a bit far... You were faithful, but I'm not. Farewell, Dishwasher."
-
+            d "How dare you do this to me Carbon... you were the one that I was trusting, the one that I was loving... You're such a disgusting person.."
             jump narration_sad_ending
-        "":
+        "Travel.":
             c "Would you mind if... we go to a Honeymoon?- I'd be grateful to do it with you by my side."
-            
+            d "A Honeymoon, are you for real? Yes, I'd love to go especially with you, I love you so much! *happy*"
             jump narration_best_ending
 
 label narration_good_ending:
