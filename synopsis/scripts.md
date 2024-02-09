@@ -143,10 +143,10 @@ Prompt 10.3:
 How dare you do this to me Carbon... you were the one that I was trusting, the one that I was loving... You're such a disgusting person..
 
 Narration good_ending:
-You kissed the bride and are now spending a happy life with Clem69. You had a lot of children and were buried together after more than 80 years spent together.
+You kissed the bride and are now spending a happy life with Clem69. You're living together happily in a huge house, sharing dishes between each other. 
 
 Narration sad_ending:
-You were not a man and decided to run away. You also put Clem69 into the dump. You are now banned from society. What a shame!
-in
+You were not a man and decided to run away. You also put Clem69 into the dump. They passed away from obsolescence about 10 years later. You are now banned from society. What a shame!
+
 Narration best_ending:
-Not only did you kiss the bride, but you also went straight for a honeymoon. You are the most loved person on the planet and are happy living with Clem69.
+You didn't only kiss the bride, you also went straight for a Honeymoon. You are the most loved person on the planet and are happy living with Clem69. You had a lot of miniature and portable dishwashers that can speak, and were buried together after more than 80 years spent together. 
