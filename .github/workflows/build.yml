@@ -26,7 +26,12 @@ jobs:
         run: |
           ./renpy.sh launcher distribute $GITHUB_WORKSPACE --package pc --package mac --package linux
 
-      # - name: Release packages
-      #   workworking-directory: ../CarbonWashing-*-dists
-      #   run: TODO
-      #   # The directory contains all the zips ready for release
+      - name: Release binaries
+        uses: svenstaro/upload-release-action@2.7.0
+        with:
+          file: ../CarbonWashing-1.0-dists/*
+          tag: automatic
+          overwrite: true
+          file_glob: true
+          prerelease: true
+          body: Automatic release of our game. MAY NOT BE WORKING PROPERLY.
