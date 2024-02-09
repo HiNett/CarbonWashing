@@ -1,14 +1,8 @@
-name: Build and release
+name: Build
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches: 
-      - main
-    types:
-      - closed
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
