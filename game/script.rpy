@@ -6,13 +6,44 @@
 define c = Character(_("Carbon"), color = "#666464")
 define d = Character(_("Dishwasher"), color = "#cc9dcf")
 
-image darty = "img/bg/darty.png"
+image bg narty = "img/bg/narty.png"
+image bg appartementCarbon = "img/bg/appartementCarbon.png"
+image bg bedroomDay = "img/bg/bedroomDay.jpg"
+image bg bedroomNight = "img/bg/bedroomNight.jpg"
+image bg carbonClose = "img/bg/carbonClose.png"
+image bg dump = "img/bg/dump.png"
+image bg garden = "img/bg/garden.png"
+image bg Honeymoon = "img/bg/honeyMoon.jpg"
+image bg jewelryStore = "img/bg/jewelryStore.jpg"
+image bg lawyerOffice = "img/bg/lawyerOffice.jpg"
+image bg paintStore = "img/bg/paintStore.png"
+image bg prison = "img/bg/prison.jpg"
+image bg roseOnBed = "img/bg/roseOnBed.jpg"
+image bg runAway = "img/bg/runAway.jpg"
+image bg streetNight = "img/bg/streetNight.jpg"
+image bg wedding = "img/bg/wedding.jpg"
+image bg weddingStore = "img/bg/weddingStore.jpg"
+
+image carbon smiling = "img/visual-novel-carbon/carbonSmiling.png"
+image carbon crying = "img/visual-novel-carbon/cryingCarbon.png"
+image carbon happy = "img/visual-novel-carbon/happyCarbon.png"
+image carbon happyCrying = "img/visual-novel-carbon/happyCryingCarbon.png"
+image carbon lovely = "img/visual-novel-carbon/lovelyCarbon.png"
+image carbon neutral = "img/visual-novel-carbon/neutralCarbon.png"
+image carbon sad = "img/visual-novel-carbon/sadCarbon.png"
 
 
+image dishwasher neutral = "img/visual-novel-dishwasher/basicDishwasher.png"
+image dishwasher happy = "img/visual-novel-dishwasher/happyDishwasher.png"
+image dishwasher angry = "img/visual-novel-dishwasher/angryDishwasher.png"
+image dishwasher sad = "img/visual-novel-dishwasher/cryingDishwasher.png"
+image dishwasher blushing = "img/visual-novel-dishwasher/blushingDishwasher.png"
 
-
-
-
+define audio.menu = "musics/menu.mp3"
+define audio.dump = "musics/chillHollowKnightMusic.mp3"
+define audio.intense = "musics/intense.MP3"
+define audio.slap = "musics/slap.mp3"
+define audio.wedding = "musics/wedding.mp3"
 
 # The game starts here.
 
@@ -58,7 +89,7 @@ label start:
     
 
 label synopsis:
-    scene darty
+    scene bg narty
     nvl_narrator "A dishwasher has been abandoned by its owners in the terrible dishwasher's cemetery named DARTY to be recycled."
     nvl_narrator "However, the logistic services of DARTY forgot about it and the dishwasher is becoming really sad."
     nvl_narrator "One day, an intern was verifying the stocks as he had nothing to do and tripped over the dishwasher."
