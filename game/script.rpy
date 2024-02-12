@@ -99,7 +99,7 @@ label synopsis:
     nvl_narrator "After a few seconds, he realized what he had stumbled upon."
     nvl_narrator "A magnificent dishwasher, with full options, in a perfect working state, which had slept here over 1 hour! What a shame."
     nvl_narrator "He instantly took a pallet truck and took the dishwasher in his car. It was love at first sight."
-    stop music audio.dump
+    stop music 
     play music audio.bg
     nvl_narrator "All the rest of the day, he was amazed by this electronic device waiting in the trunk of his car."
     nvl_narrator "He had one idea for his future: Marry the dishwasher."
@@ -253,7 +253,7 @@ label Q7:
 
     menu:
         "Yes":
-            show diswhasher blushing at right
+            show dishwasher blushing at right
             d "As you wish. Here we go again."
             jump Q6
         "No":
