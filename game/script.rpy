@@ -12,7 +12,7 @@ image bg bedroomDay = "img/bg/bedroomDay.jpg"
 image bg bedroomNight = "img/bg/bedroomNight.jpg"
 image bg dump = "img/bg/dump.png"
 image bg garden = "img/bg/garden.png"
-image bg Honeymoon = "img/bg/honeyMoon.jpg"
+image bg Honeymoon = "img/bg/honeyMoon.png"
 image bg jewelryStore = "img/bg/jewelryStore.jpg"
 image bg lawyerOffice = "img/bg/lawyerOffice.jpg"
 image bg paintStore = "img/bg/paintStore.png"
@@ -97,7 +97,7 @@ label synopsis:
     nvl_narrator "After a few seconds, he realized what he had stumbled upon."
     nvl_narrator "A magnificent dishwasher, with full options, in a perfect working state, which had slept here over 1 hour! What a shame."
     nvl_narrator "He instantly took a pallet truck and took the dishwasher in his car. It was love at first sight."
-    stop music
+    stop music audio.dump
     play music audio.bg
     nvl_narrator "All the rest of the day, he was amazed by this electronic device waiting in the trunk of his car."
     nvl_narrator "He had one idea for his future: Marry the dishwasher."
@@ -110,26 +110,26 @@ label Q1:
     "He opens it and finally sees it after this long day, he is so happy!"
     show carbon happy at left 
     "However, it isn't a shared feeling. As soon as the dishwasher is free, they tell him:"
-    show dishwasher angry
+    show dishwasher angry at right
     d "Why should I trust you? You kidnapped me!"
     
     menu:
         "I fell in love with you at the first sight":
-            show dishwasher neutral
+            show dishwasher neutral at right
             d "I don't believe in love at first sight... But I trust you."
             jump Q2
         "I didn't kidnap you, I saved your life":
-            show dishwasher blushing
+            show dishwasher blushing at right
             d "Awwww, that is so sweet of you, I'm really thanksful for what you did. I will never leave you or disagree with you ever again!"            
             jump Q3
         "Yes I did, so what":
-            show dishwasher angry
+            show dishwasher angry at right
             d "Go f*** yourself!"
             "You just started but you already disappointed your crush. Make an effort!"
             jump endBad
 
 label Q2:
-    show dishwasher blushing
+    show dishwasher blushing at right
     d "Could I, at least, ask why did you fall in love with me?"
     d "I mean... I'm only an ordinary dishwasher which was abandonned in a poor NARTY cemetery... So..."
 
@@ -138,41 +138,41 @@ label Q2:
             d "Awwww~, thank you so much mister! I'm really flattered by what you just said!"
             jump narration_ending_1
         "I just needed something to wash my dishes":
-            show dishwasher neutral
+            show dishwasher neutral at right
             d "Seriously?! I guess you are honest at least..."
             jump Q3
         "I was bored":
-            show dishwasher angry
+            show dishwasher angry at right
             d "Go f*** yourself!!!!"
             "Are you serious? Do you really want to loose?"
             jump endBad
 
 label Q3:
-    show dishwasher happy
+    show dishwasher happy at right
     d "Okay then.. Actually, I was in a big trouble where I was, the fact that you saved me was meant to be."
     d "Humm, so.. May I ask you.."
-    show dishwasher blushing
+    show dishwasher blushing at right
     d "What do you prefer about me?"
 
     menu:
         "Your options":
             d "I guess it could have been worse. *shrug* Thank you!"
-            show dishwasher neutral
+            show dishwasher neutral at right
             jump narration_ending_1
         "Your shape":
-            show dishwasher blushing
+            show dishwasher blushing at right
             d "Oh... Well, I wasn't expecting this. It pleases me more than I thought it would..."
             jump narration_ending_1
         "Your cave":
             d "You jerk! I was sure I couldn't trust you!"
-            show dishwasher angry
+            show dishwasher angry at right
             d "Why does it always end like this..."
-            show dishwasher sad
+            show dishwasher sad at right
             "Well, you made a mistake, it happens."
             jump endBad
         "your capacity (6.9 L)":
             d "I mean... That IS true. I have a great capacity, but you would never fill it! I hate you!"
-            show dishwasher angry
+            show dishwasher angry at right
             "Hum, I guess you just.. like different things from other people. Pull yourself together!"
             jump endBad
 
@@ -187,22 +187,22 @@ label narration_ending_1:
 
 label Q4:
     scene bg appartementCarbon
-    show dishwasher neutral
-    show carbon smiling
+    show dishwasher neutral at right
+    show carbon smiling at left
     d "Since we are in the same place now, we need to agree on some things. So, first of all..."
     d "Where do you want to go to buy washing detergent?"
 
     menu:
         "I think we just need to go to the little shop near the subway station. It's not too far.":
-            show dishwasher happy
+            show dishwasher happy at right
             d "... Okay why not, I'll let you go there then."
             jump Q5
         "Well, actually you're already perfect. We don't need detergent.":
-            show dishwasher happy
+            show dishwasher happy at right
             d "*laugh* Okay okay, you got me there, idiot. We need to agree on that though."
             jump Q5
         "Maybe if I make it on my own...":
-            show dishwasher angry
+            show dishwasher angry at right
             play sound audio.slap
             d "*slap* Do not finish your sentence, you pipsqueak."
             stop sound
@@ -210,52 +210,52 @@ label Q4:
             jump endBad
 
 label Q5:
-    show dishwasher blushing
+    show dishwasher blushing at right
     d "So.. What is the type of detergent you want to use?"
 
     menu:
         "detergent tablet.":
-            show dishwasher happy
+            show dishwasher happy at right
             d "I think liquid detergent could be nice. It's cheap and comes in handy."
         "Finish quantum gel.":
-            show dishwasher neutral
+            show dishwasher neutral at right
             d "In my opinion, the powder detergent is THE BEST. I LOVE that you thought about that."
         "Only flush the dishwasher":
-            show dishwasher neutral
+            show dishwasher neutral at right
             d "I don't have any preferences as well. You can just go to the shop and bring whatever you want."
     jump Q6
 
 label Q6:
     scene bg roseOnBed
-    show dishwasher happy
+    show dishwasher happy at right
     d "Okayy, you just came back with the detergent. Nice, thank you!"
     d "Well... Which program do you want to launch?"
 
     menu:
         "Be soft, launch at 30°C":
-            show carbon lovely
+            show carbon lovely at left
             c "Let's go with a long program. You'll need some time to wash all those dirty plates, I've been stacking them for days now..."
-            show dishwasher blushing
+            show dishwasher blushing at right
             d "Do not worry, I'm used to big amounts of dishes."
         "Launch at 60°C":
-            show carbon lovely
+            show carbon lovely at left 
             c "Let's go with a small program, it is going to be less exhaustive for you. You just restarted to work, we're not going too fast for now."
-            show dishwasher blushing
+            show dishwasher blushing at right 
             d "Aww you're cute. You don't need to be so kind with me."
     jump Q7
 
 label Q7:
     scene bg bedroomNight
-    show dishwasher blushing
+    show dishwasher blushing at right 
     d "I'm done with the current program, may I go for another one?"
 
     menu:
         "Yes":
-            show diswhasher blushing
+            show diswhasher blushing at right
             d "As you wish. Here we go again."
             jump Q6
         "No":
-            show dishwasher sad
+            show dishwasher sad at right 
             d "Oke, I'll stop here. I'll do some more later. Well hum... I need to confess that I like the time spent with you. I'd... like to go further."
             jump narration_ending_2
 
@@ -269,19 +269,19 @@ label narration_ending_2:
 
 label Q8:
     scene bg bedroomDay
-    show dishwasher happy
+    show dishwasher happy at right 
     d "Well, since we're planning on getting married, we need some more stuff to do it."
     d "What do you want to purchase for your wedding?"
 
     menu:
         "Ring.":
-            show dishwasher blushing
+            show dishwasher blushing at right
             d "OH my God, do you want to waste your money like that? Just for me?"
             scene bg jewelryStore
             "You both go to the nearest jewelry to find Clem69 an engagement ring. You arrive at the jewelry store and choose the prettiest ring in the entire."
             jump Q9
         "Dress.":
-            show dishwasher neutral
+            show dishwasher neutral at right 
             d "Do you think I'll fit in the dress..? Hmm.. I'll trust you then."
             scene bg weddingStore
             "You both go to the nearest wedding shop to find an appropriate dress for Clem69. It was hard... but you successfully found a dress."
@@ -296,21 +296,21 @@ label Q8:
 
 label Q9:
     scene bg appartementCarbon
-    show dishwasher neutral
+    show dishwasher neutral at right
     d "Hum... We got a difficult situation you know, you're a man and I'm.. a dishwasher. So we need to go to a lawyer."
     scene bg lawyerOffice
     play sound audio.intense
 
     menu:
         "Be honest":
-            show carbon lovely
+            show carbon lovely at left
             c "I directly fell in love with them. I can't take it anymore, I need to marry her."
-            show dishwasher blushing
+            show dishwasher blushing at right
             d "Awww that's so sweet of you, honey."
             "The lawyer understood that love is stronger, and no matter what, you'll be together. He told you that the wedding will take place."
             jump Q10
         "Use humor":
-            show carbon lovely
+            show carbon lovely at left
             c "You know, this is not the kind of women we're used to meet. Although, I'd be glad to marry this dishwasher."
             stop sound
             play sound audio.dump
@@ -320,7 +320,7 @@ label Q9:
             stop sound
             jump endBad
         "Say the first thing that goes to your mind":
-            show carbon lovely
+            show carbon lovely at left
             c "I love dishwashers, even more when they can't go away from me..."
             scene bg prison
             stop sound
@@ -331,7 +331,7 @@ label Q9:
 label Q10:
     stop sound
     scene bg appartementCarbon
-    show dishwasher blushing
+    show dishwasher blushing at right 
     d "Okay, so we got some stuff. Now, we just need to plan what we're going to do. Let's get married!"
     play sound audio.wedding
     scene bg wedding
@@ -339,33 +339,33 @@ label Q10:
 
     menu:
         "Kiss the bride.":
-            show carbon happyCrying
+            show carbon happyCrying at left
             c "Well, I wanna do something that I already want to do... I want to kiss you."
-            show dishwasher blushing
+            show dishwasher blushing at right 
             d "Let's kiss. *smouch* Thank you Carbon for everything, you're the love of my life."
             jump narration_good_ending
         "Get scared.":
-            show carbon crying
+            show carbon crying at left
             c "Well hum, I think it went a bit far... You were faithful, but I'm not. Farewell, Dishwasher."
-            show dishwasher sad
+            show dishwasher sad at right 
             d "How dare you do this to me Carbon... you were the one that I was trusting, the one that I was loving... You're such a disgusting person.."
             jump narration_sad_ending
         "Travel.":
-            show carbon happy
+            show carbon happy at left 
             c "Would you mind if... we go to a Honeymoon?- I'd be grateful to do it with you by my side."
-            show dishwasher happy
+            show dishwasher happy at right 
             d "A Honeymoon, are you for real? Yes, I'd love to go especially with you, I love you so much! *happy*"
             jump narration_best_ending
 
 label narration_good_ending:
     stop sound
+    play music audio.bg
     scene bg garden
     nvl_narrator "You kissed the bride and are now spending a happy life with Clem69."
     nvl_narrator "You're living together happily in a huge house, sharing dishes between each other."
     jump end
 
 label narration_best_ending:
-    stop sound
     scene bg Honeymoon
     nvl_narrator "You didn't only kiss the bride, you also went straight for a Honeymoon. "
     nvl_narrator "You are the most loved person on the planet and are happy living with Clem69. "
@@ -374,10 +374,11 @@ label narration_best_ending:
 
 label narration_sad_ending:
     stop sound
+    play music audio.dump
     scene bg runAway
     nvl_narrator "You were not a man and decided to run away. "
     show bg dump
-    show dishwasher sad
+    show dishwasher sad at right
     nvl_narrator "You also put Clem69 into the dump. They passed away from obsolescence about 10 years later. "
     nvl_narrator "You are now banned from society. What a shame!"
     jump end
