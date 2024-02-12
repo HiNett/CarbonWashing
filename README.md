@@ -17,3 +17,11 @@ CarbonWashing is a CYOA (Choose Your Own Adventure) game. This fantasy-style gam
 | <img src="https://ca.slack-edge.com/T019N8PRR7W-U05SZB93L1Y-076dfb50f04a-64"> | BAVAROIS Séréna | https://github.com/NanaChocolat |
 
 ## How to play ?
+
+You can download the latest version of the game <a href="https://github.com/HiNett/CarbonWashing/releases/download/automatic/CarbonWashing-1.0-pc.zip">here</a>.
+<br><br>
+- Extract the file.
+- Open the extracted file.
+- You just need to launch the CarbonWashing.exe
+
+Enjoy!
