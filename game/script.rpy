@@ -98,15 +98,16 @@ label synopsis:
     nvl_narrator "One day, an intern was verifying the stocks as he had nothing to do and tripped over the dishwasher."
     nvl_narrator "After a few seconds, he realized what he had stumbled upon."
     nvl_narrator "A magnificent dishwasher, with full options, in a perfect working state, which had slept here over 1 hour! What a shame."
-    nvl_narrator "He instantly took a pallet truck and took the dishwasher in his car. It was love at first sight."
-    stop music 
-    play music audio.bg
+    nvl_narrator "He instantly took a pallet truck and took the dishwasher in his car. It was love at first sight."    
     nvl_narrator "All the rest of the day, he was amazed by this electronic device waiting in the trunk of his car."
     nvl_narrator "He had one idea for his future: Marry the dishwasher."
+    stop music
 
     jump Q1
 
 label Q1:
+    stop music
+    play music audio.bg
     scene bg appartementCarbon
     "At the end of the day, Carbon finally comes back at home and goes directly to his trunk, to see his marvelous dishwasher."
     "He opens it and finally sees it after this long day, he is so happy!"
@@ -205,18 +206,19 @@ label Q4:
             jump Q5
         "Maybe if I make it on my own...":
             show dishwasher angry at right
+            stop music
             play sound audio.slap
             d "*slap* Do not finish your sentence, you pipsqueak."
-            stop sound
             "Huh? Are you alright mate? Why did you choose that?"
             jump endBad
 
 label Q5:
+    play music audio.bg
     show dishwasher blushing at right
     d "So.. What is the type of detergent you want to use?"
 
     menu:
-        "detergent tablet.":
+        "Detergent tablet.":
             show dishwasher happy at right
             d "I think liquid detergent could be nice. It's cheap and comes in handy."
         "Finish quantum gel.":
@@ -297,10 +299,13 @@ label Q8:
             jump endBad
 
 label Q9:
+    stop music
+    play music audio.bg
     scene bg appartementCarbon
     show dishwasher neutral at right
     d "Hum... We got a difficult situation you know, you're a man and I'm.. a dishwasher. So we need to go to a lawyer."
     scene bg lawyerOffice
+    stop music
     play sound audio.intense
 
     menu:
@@ -332,10 +337,13 @@ label Q9:
 
 label Q10:
     stop sound
+    stop music
+    play music audio.bg
     scene bg appartementCarbon
     show dishwasher blushing at right 
     d "Okay, so we got some stuff. Now, we just need to plan what we're going to do. Let's get married!"
-    play sound audio.wedding
+    stop music
+    play music audio.wedding
     scene bg wedding
     "What do you want to do during the wedding?"
 
@@ -360,35 +368,45 @@ label Q10:
             jump narration_best_ending
 
 label narration_good_ending:
+    stop music
     stop sound
     play music audio.bg
     scene bg garden
-    nvl_narrator "You kissed the bride and are now spending a happy life with Clem69."
-    nvl_narrator "You're living together happily in a huge house, sharing dishes between each other."
+    "You kissed the bride and are now spending a happy life with Clem69."
+    "You're living together happily in a huge house, sharing dishes between each other."
     jump end
 
 label narration_best_ending:
+    stop music
+    play music audio.victory
     scene bg Honeymoon
-    nvl_narrator "You didn't only kiss the bride, you also went straight for a Honeymoon. "
-    nvl_narrator "You are the most loved person on the planet and are happy living with Clem69. "
-    nvl_narrator "You had a lot of miniature and portable dishwashers that can speak, and were buried together after more than 80 years spent together. "
+    "You didn't only kiss the bride, you also went straight for a Honeymoon. "
+    "You are the most loved person on the planet and are happy living with Clem69. "
+    "You had a lot of miniature and portable dishwashers that can speak, and were buried together after more than 80 years spent together. "
     jump end
 
 label narration_sad_ending:
+    stop music
     stop sound
     play music audio.dump
     scene bg runAway
-    nvl_narrator "You were not a man and decided to run away. "
+    "You were not a man and decided to run away. "
     show bg dump
     show dishwasher sad at right
-    nvl_narrator "You also put Clem69 into the dump. They passed away from obsolescence about 10 years later. "
-    nvl_narrator "You are now banned from society. What a shame!"
+    "You also put Clem69 into the dump. They passed away from obsolescence about 10 years later. "
+    "You are now banned from society. What a shame!"
     jump end
 
 label end:
+    stop music 
+    stop sound
+    play music audio.death
     return
 
-label endBad:
-    nvl_narrator "You just lost the game. "
-    nvl_narrator "Try to improve your reactions and how you behave to make them in love with you!"
+label endBad:   
+    stop music 
+    stop audio
+    play music audio.death
+    "You just lost the game. "
+    "Try to improve your reactions and how you behave to make them in love with you!"
     return # Main menu
