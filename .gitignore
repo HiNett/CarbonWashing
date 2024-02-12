@@ -20,6 +20,7 @@ ehthumbs_vista.db
 *~
 *.bak
 .gdb_history
+*.json
 
 # Compiled Ren'Py files.
 *.rpyc
