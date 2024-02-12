@@ -44,6 +44,8 @@ define audio.intense = "musics/intense.MP3"
 define audio.slap = "musics/slap.mp3"
 define audio.wedding = "musics/wedding.mp3"
 define audio.bg = "musics/bgSoundtrack.mp3"
+define audio.death = "musics/death.mp3"
+define audio.victory = "musics/victory.mp3"
 
 # The game starts here.
 
