@@ -46,6 +46,7 @@ define audio.wedding = "musics/wedding.mp3"
 define audio.bg = "musics/bgSoundtrack.mp3"
 define audio.death = "musics/death.mp3"
 define audio.victory = "musics/victory.mp3"
+define audio.romantic = "musics/romanticMusic.mp3"
 
 # The game starts here.
 
@@ -230,6 +231,8 @@ label Q5:
     jump Q6
 
 label Q6:
+    stop music 
+    play music audio.romantic
     scene bg roseOnBed
     show dishwasher happy at right
     d "Okayy, you just came back with the detergent. Nice, thank you!"
@@ -249,6 +252,8 @@ label Q6:
     jump Q7
 
 label Q7:
+    stop music 
+    play music audio.bg
     scene bg bedroomNight
     show dishwasher blushing at right 
     d "I'm done with the current program, may I go for another one?"
