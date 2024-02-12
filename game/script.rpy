@@ -43,6 +43,7 @@ define audio.dump = "musics/chillHollowKnightMusic.mp3"
 define audio.intense = "musics/intense.MP3"
 define audio.slap = "musics/slap.mp3"
 define audio.wedding = "musics/wedding.mp3"
+define audio.bg = "musics/bgSoundtrack.mp3"
 
 # The game starts here.
 
@@ -89,12 +90,15 @@ label start:
 
 label synopsis:
     scene bg narty
+    play music audio.dump
     nvl_narrator "A dishwasher has been abandoned by its owners in the terrible dishwasher's cemetery named NARTY to be recycled."
     nvl_narrator "However, the logistic services of NARTY forgot about it and the dishwasher is becoming really sad."
     nvl_narrator "One day, an intern was verifying the stocks as he had nothing to do and tripped over the dishwasher."
     nvl_narrator "After a few seconds, he realized what he had stumbled upon."
     nvl_narrator "A magnificent dishwasher, with full options, in a perfect working state, which had slept here over 1 hour! What a shame."
     nvl_narrator "He instantly took a pallet truck and took the dishwasher in his car. It was love at first sight."
+    stop music
+    play music audio.bg
     nvl_narrator "All the rest of the day, he was amazed by this electronic device waiting in the trunk of his car."
     nvl_narrator "He had one idea for his future: Marry the dishwasher."
 
@@ -104,7 +108,7 @@ label Q1:
     scene bg appartementCarbon
     "At the end of the day, Carbon finally comes back at home and goes directly to his trunk, to see his marvelous dishwasher."
     "He opens it and finally sees it after this long day, he is so happy!"
-    show carbon happy
+    show carbon happy at left 
     "However, it isn't a shared feeling. As soon as the dishwasher is free, they tell him:"
     show dishwasher angry
     d "Why should I trust you? You kidnapped me!"
@@ -222,7 +226,7 @@ label Q5:
     jump Q6
 
 label Q6:
-    scene roseOnBed
+    scene bg roseOnBed
     show dishwasher happy
     d "Okayy, you just came back with the detergent. Nice, thank you!"
     d "Well... Which program do you want to launch?"
